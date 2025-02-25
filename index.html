@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Universidad Gerardo Barrios</title>
     <style>
-body{
-    margin: 0;
-}
-main{
-    width: 100%;
-    height: 80vh;
-}
-header{
-    background-color: skyblue;
-    
-}
-footer{ 
-    background-color: rgba(54, 54, 170);
-    color:white;
-}
-header, footer{
-    text-align: center;
-    height: 8vh;
-    font-size: 2rem;
-}
-
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: skyblue;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header-title {
+            font-size: 1.8rem;
+            text-align: center;
+            flex-grow: 1;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+        main {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            background-color: rgb(54, 54, 170);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <header>
-hello
+        <div class="header-left">
+            <img src="UGB_LOGO_AZUL.png" class="logo">
+        </div>
+        <div class="header-title"><strong>Universidad Gerardo Barrios</strong></div>
+        <div class="info">
+            <p>Carrera: Ingeniería en Sistemas y Redes Informaticos</p>
+            <p>Código de Estudiante: SMSS180923</p>
+        </div>
     </header>
     <main>
-
+        <!-- Contenido principal -->
     </main>
     <footer>
-hello
+        Nombre del Estudiante: Lilian Amaraly Perla Arias<br>
+        Examen Parcial - Primer Cómputo
     </footer>
-
 </body>
 </html>
