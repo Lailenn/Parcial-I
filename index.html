@@ -3,76 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad Gerardo Barrios</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: skyblue;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-        }
-        .header-left {
-            display: flex;
-            align-items: center;
-        }
-        .logo {
-            height: 50px;
-            margin-right: 10px;
-        }
-        .header-title {
-            font-size: 1.8rem;
-            text-align: center;
-            flex-grow: 1;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .info {
-            text-align: right;
-            font-size: 0.9rem;
-        }
-        main {
-            width: 100%;
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        footer {
-            background-color: rgb(54, 54, 170);
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 1rem;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Turismo en El Salvador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="header-left">
-            <img src="UGB_LOGO_AZUL.png" class="logo">
-        </div>
-        <div class="header-title"><strong>Universidad Gerardo Barrios</strong></div>
-        <div class="info">
-            <p>Carrera: Ingeniería en Sistemas y Redes Informaticos</p>
-            <p>Código de Estudiante: SMSS180923</p>
-        </div>
+        <nav>
+            <div class="logo">Pervilla</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#lugares">Lugares</a></li>
+               
+            </ul>
+        </nav>
+        <span class="header-title">TURISMO EN EL SALVADOR</span>
     </header>
+
     <main>
-        <!-- Contenido principal -->
+        <section id="inicio">
+            <h1>Descubre El Salvador</h1>
+        
+                Sumérgete en la belleza de El Salvador, desde sus majestuosas playas hasta sus impresionantes volcanes y ciudades vibrantes. ¡Explora la magia que te espera! Descubre la hospitalidad de su gente, la riqueza cultural que se refleja en cada rincón y la adrenalina de sus deportes extremos. Recorre sus pintorescos pueblos, disfruta de la exquisita gastronomía local y vive experiencias únicas en un país lleno de historia y aventura.</p>
+            <div style="display: flex; justify-content: center;">
+                <iframe src="https://player.vimeo.com/video/693745839" width="1200" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="lugares">
+            <h2>Lugares Destacados</h2>
+            <tour-gallery></tour-gallery>
+        </section>
     </main>
+
     <footer>
-        Nombre del Estudiante: Lilian Amaraly Perla Arias<br>
-        Examen Parcial - Primer Cómputo
+        <div class="footer-content">
+            <img src="https://elsalvador.travel/nextimages/n/img/bg.png" class="footer-logo" alt="Logo Turismo El Salvador">
+        </div>
+        <p>&copy; 2025 Turismo El Salvador. Todos los derechos reservados.</p>
+        <p>Estudiantes: LILIAN AMARALY PERLA ARIAS (SMSS180923) y FLOR GUADALUPE VILLATORO VASQUEZ (SMSS125223)</p>
     </footer>
+
+    <script src="components/tour-gallery.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
